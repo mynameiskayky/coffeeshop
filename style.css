@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:wght@400;500;700&display=swap');
+
+@font-face {
+    font-family: Grand;
+    src: url('fonts/GrandCru-LightS.otf');
+}
+
+:root {
+    --logo: 'Grand', sans-serif;
+    --hs: 'Montserrat', sans-serif;
+    --p: 'Lora', sans-serif;
+
+    --marrom: #8B5E34;
+    --branco: #F2F5EA;
+    --bg: #313131;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #3f3f3f;
+    padding: 15px;
+}
+
+.info {
+    max-width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    font-family: var(--p);
+    font-weight: 500;
+    color: #fff;
+}
+
+.info a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    background-color: var(--bg);
+
+}
+
+.menu {
+    color: white;
+    height: 150px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.menu a {
+    color: var(--marrom);
+    text-decoration: none;
+    font-family: var(--logo);
+    font-size: 1.4em;
+    letter-spacing: 4px;
+    padding-right: 0px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.menu li {
+    font-family: var(--p);
+    font-size: 1.1em;
+    margin-left: 30px;
+    border-bottom: 4px solid transparent;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    border-bottom: 3px solid var(--marrom);
+}
+
+img {
+    width: 100%;
+}
+
+/* bg */
+
+.bg {
+    width: 100%;
+    height: 500px;
+    background: rgba(31, 31, 31, 0.58) url('img/bg.jpg');
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    max-width: 600px;
+    color: var(--branco);
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    padding: 0 15px;
+}
+
+.content h1 {
+    font-family: var(--hs);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-family: var(--p);
+    font-size: 1.25em;
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+
+.content a {
+    color: #fff;
+    font-family: var(--logo);
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: var(--marrom);
+    border-radius: 50px;
+    margin: 0 auto;
+    transition: 1s;
+}
+
+.content a:hover {
+    background-color: var(--branco);
+    color: var(--marrom);
+    opacity: 0.7;
+    font-weight: bolder;
+}
+
+.mas {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mas img {
+    width: 24px;
+    height: 24px;
+}
+
+.mas h2 {
+    font-family: var(--hs);
+    color: var(--marrom);
+    margin: 10px 0 30px;
+}
+
+.produtos {
+    background-color: var(--bg);
+    margin: 0 auto;
+    color: #fff;
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.produtos-info {
+    flex: 1 1 280px;
+    height: 380px;
+    background-color: #272727;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    font-family: var(--p);
+    margin: 30px;
+}
+
+.produtos-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.produtos-info h3 {
+    font-family: var(--hs);
+    margin-top: 20px;
+    font-size: 1.4em;
+}
+
+.produtos-info p {
+    font-family: var(--p);
+    color: lightgrey;
+    max-width: 320px;
+    margin-top: 10px;
+}
+
+@media (max-width: 630px) {
+    .menu a{
+        margin: 0 auto;
+    }
+
+    .menu ul {
+        margin: 0 auto;
+    }
+}
+
+/* @media (max-width: 1051px) {
+    .produtos {
+        height: 100%;
+    }
+} */
